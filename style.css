@@ -1,0 +1,263 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+/*Clases generales*/
+
+.buttonFull{
+    background-color: aliceblue;
+    color: blueviolet;
+    padding: 1% 3%;
+    border-radius: 5px;
+    box-shadow: 2px 3px  rgb(127, 29, 219);
+}
+
+.buttonEmpty{
+    border: aliceblue solid 2px;
+    color:aliceblue;
+    padding: 1% 2%;
+    border-radius: 5px;
+    box-shadow: 2px 3px  rgb(127, 29, 219);
+
+}
+
+.button{
+    color:aliceblue;
+    padding: 1%;
+}
+
+
+.centrado{
+    padding-left: 20%;
+    padding-right: 20%;  
+}
+
+/* Header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+}
+
+
+.flex-container{
+    width: 100%;
+    background-color: aqua;
+}
+
+.barraNavegacion{
+    width: 100%;
+    display: flex;
+}
+
+.barraNavegacion ul{
+    display: flex;
+    width: 100%;
+    justify-content: end;      
+}
+
+.barraNavegacion li{
+    margin-left: 2%;
+    list-style: none;
+    padding-top: 1%;   
+}
+
+.manifestacionesActividades{
+    display: flex;
+    padding-top: 1%;
+    margin-top: 1%;
+    margin-bottom: 4%;     
+}
+
+#actividades{
+    margin-left: 2%;
+}
+
+.titulo h1{
+    font-size:40px;
+    color: aliceblue;
+}
+
+.titulo p{
+    font-size:15px;
+    color: aliceblue;
+}
+
+/* EVENTOS DESTACADOS */
+
+.eventosDestacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.eventosDestacadosTop{
+    font-size: 30px;
+    padding: 12% 0% 4% 0%;
+}
+
+/* Perfiles general */
+
+
+.Perfiles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1440px) {
+
+    .Perfiles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        /* align-items: center; */
+        /* justify-content: center; */
+        background-color: aliceblue;
+    }
+
+    .perfil{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:aliceblue;
+        height: 250px;
+        box-shadow: 0 0 15px 0 gray;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .Perfiles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center; 
+        justify-content: center;
+        background-color: aliceblue;
+    }
+
+    .perfil{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color:aliceblue;
+        height: 250px;
+        box-shadow: 0 0 15px 0 gray;
+        border-radius: 10px;
+        padding: 2%;
+    }
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color:aliceblue;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 15px 0 gray;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+/* Perfiles personalizado */
+
+.imagenes{
+    width:100px;
+    border-radius: 100px;    
+}
+
+.rol{
+    color: blue;
+    font-size: 15px;
+    padding: 1%;
+    border-radius: 50px;
+    background-color: rgb(175, 175, 241);
+}
+
+/* Charla */
+
+.charlaColoquio{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.izquierda{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+#apuntate{
+    font-size: 20px;
+}
+
+.derecha{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 1024px){
+
+    .charlaColoquio{
+        display: flex;
+        flex-direction: row;
+        background-color: blueviolet;
+        height: 200px;
+    }
+    
+    .izquierda{
+        display:flex;
+        flex-direction: column;
+        align-items:flex-start;
+        color: aliceblue;
+        justify-content: center;
+    }
+    
+    #apuntate{
+        font-size: 20px;
+    }
+    
+    .derecha{
+        display: flex;
+        align-items: center;
+        width: 30%;
+    }  
+}
+
+/* Salidas de Manifestaciones */
+
+.salidasDeLasManifestaciones{
+    display: flex;
+    align-content: center;
+    width: 350px;
+    height: 100px;
+    flex-direction: column;
+    
+}
+
+.salidasDeLasManifestaciones h1{
+    margin:10%
+}
+
+.salidasDeLasManifestaciones article{
+    border: black solid 2px
+}
